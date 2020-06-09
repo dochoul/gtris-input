@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>gtris Input component</h1>
+    <h1>Input component</h1>
     <div>
       <hw-input placeholder="😍 Basic usage"/>
     </div>
@@ -16,18 +16,12 @@
         :defaultValue="defaultValue"
         v-model="defaultValue"
         placeholder="😁 Placeholder..."
-        custom-class="hiworks-input-custom-class"
-        width="800px"
-        height="60px"
         @keyup="keyup"
         @pressEnter="pressEnter"
       />
     </div>
     <div>
-      <hw-input
-        placeholder="😍 Custom Class: !important를 붙여야 css가 적용됨..가급적 사용하지 않는 것이 좋을듯"
-        custom-class="input-custom-class"
-      />
+      <hw-input placeholder="😍 Custom Class" custom-class="input-custom-class"/>
     </div>
     <div>
       <hw-input placeholder="🖐🏿 disabled" disabled/>
@@ -53,10 +47,6 @@ export default {
       console.log("Press Enter");
       this.defaultValue = "";
     },
-    pressEnter2() {
-      console.log("Press Enter");
-      this.defaultValue2 = "";
-    },
     keyup() {
       console.log("Key Up");
     }
@@ -64,7 +54,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 #app {
   width: 90%;
   margin: 3em auto 0;
@@ -75,6 +65,12 @@ div {
 }
 .hw-input.input-custom-class {
   border-width: 4px;
-  border-color: yellow;
+  border-color: crimson;
+  &:hover {
+    border-color: indigo;
+  }
+  &:focus {
+    border-color: khaki;
+  }
 }
 </style>

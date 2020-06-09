@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $primary-color: #2985db;
 .hw-input {
   display: inline-block;
