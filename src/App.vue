@@ -39,7 +39,7 @@ export default {
   },
   data() {
     return {
-      defaultValue: "😍 입력창에 기본으로 들어갈 텍스트를 지정할 수 있습니다."
+      defaultValue: "🐷 입력창에 기본으로 들어갈 텍스트를 지정할 수 있습니다."
     };
   },
   methods: {
