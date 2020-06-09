@@ -15,16 +15,16 @@
       <hw-input
         :defaultValue="defaultValue"
         v-model="defaultValue"
-        placeholder="😁 Placeholder..."
+        placeholder="💻 keyup, press Enter key binding"
         @keyup="keyup"
         @pressEnter="pressEnter"
       />
     </div>
     <div>
-      <hw-input placeholder="😍 Custom Class" custom-class="input-custom-class"/>
+      <hw-input placeholder="🍭 Custom Class" custom-class="input-custom-class"/>
     </div>
     <div>
-      <hw-input placeholder="🖐🏿 disabled" disabled/>
+      <hw-input placeholder="⛔ disabled" disabled/>
     </div>
   </div>
 </template>
